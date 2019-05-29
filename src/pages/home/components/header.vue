@@ -1,10 +1,13 @@
 <!-- 1rem = html font-size = 50px -->
 
-<style scoped>
+
+<!-- @import '../../../assets/style/varibles.styl'这下面引入的太长了可以简写 -->
+<style lang="stylus" scoped>
+@import '~styles/varibles.styl'
 	.header{
 		display:flex;
 		height:.86rem;
-		background:#00bcd4;
+		background:$bgColor;
 		color:#fff;
 		font-size:0.4rem;
 	}
