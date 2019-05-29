@@ -7,6 +7,7 @@ import router from './router' //叫做引入router变量，当前目录下的rou
 import fastClick from 'fastclick' 
 import './assets/style/reset.css'  //引入css文件
 import './assets/style/border.css'  
+import './assets/style/iconfont.css'  
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
