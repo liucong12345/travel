@@ -5,12 +5,19 @@ import Vue from 'vue'
 import App from './App'
 import router from './router' //叫做引入router变量，当前目录下的router
 import fastClick from 'fastclick' 
+import VueAwesomeSwiper from 'vue-awesome-swiper' 
 import 'styles/reset.css'  //引入css文件这是简写法
 import 'styles/border.css'  
 import 'styles/iconfont.css'  
+import 'swiper/dist/css/swiper.css'  
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+
+// 使用VueAwesomeSwiper插件
+Vue.use(VueAwesomeSwiper)
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
