@@ -7,10 +7,18 @@ const path = require('path')
 module.exports = {
   dev: {
 
-    // Paths
+    // Paths 
+    // 把路径转为api，webpack-dev-server  这个工具提供的，
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/api':{
+            target:'http://localhost:8080',
+            pathRewrite:{
+                '^/api':'/static/mock'
+            }
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
